@@ -1,0 +1,44 @@
+.edit {
+    width: 30px;
+    height: 30px;
+    margin-left: 1000px;
+   }
+
+   .write {
+    width: 20px;
+    height: 20px;
+   }
+
+   .remove {
+    width: 30px;
+    height: 30px;
+   }
+
+   .trash {
+    width: 20px;
+    height: 20px;
+   }
+
+   .card {
+    width: 1100px;
+    height: 100px;
+    background-color: lightblue;
+   }
+
+   .trancription {
+    display: flex;
+    justify-content: center;
+   }
+
+   .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+   .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+   }
