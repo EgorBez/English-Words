@@ -1,135 +1,537 @@
 <!DOCTYPE html>
-<html lang="en">
- <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>English Words</title>
-  <link rel="icon" href="fav.ico" type="image" />
-  <link href="./assets/styles/styles.css" rel="stylesheet" />
-  <style>
-   .edit {
-    width: 30px;
-    height: 30px;
-    margin-left: 1000px;
-   }
-
-   .write {
-    width: 20px;
-    height: 20px;
-   }
-
-   .remove {
-    width: 30px;
-    height: 30px;
-   }
-
-   .trash {
-    width: 20px;
-    height: 20px;
-   }
-
-   .card {
-    width: 1100px;
-    height: 100px;
-    background-color: lightblue;
-   }
-
-   .trancription {
-    display: flex;
-    justify-content: center;
-   }
-
-   .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-   }
-
-   .wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
-   }
-  </style>
- </head>
- <body class="body">
-  <div class="card">
-    <div class="сontainer">
-     <div class="wrapper">
-      <div class="words">Add</div>
-      <div class="trancription">[aed]</div>
-      <div class="translate">Добавлять</div>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Недвижимость в Паттайе</title>
+    <link href="./assets/styles/style.css" rel="stylesheet">
+    <link href="./assets/styles/stylesForObjects.css" rel="stylesheet">
+    <style>
+   </style>
+</head>
+<body class="body">
+<header class="header">
+    <img class="logo" src= "./assets/images/logo.jpg" alt="Логотип">
+    <button class="rent">Аренда Недвижимости
+    <img class="house" src="./assets/images/house.jpg" alt="Эмодзи">
+    </button>
+    <button id="hotRent">Горячие предложения
+        <img class="fire" src="./assets/images/fire.png" alt="Эмодзи">
+    </button>
+    <button class="sale">Продажа Недвижимости
+        <img class="key" src="./assets/images/key.jpg" alt="Эмодзи">
+    </button>
+    <button class="auto">Аренда авто, скутеров и трансфер
+        <img class="car" src="./assets/images/car.jpg" alt="Эмодзи">
+    </button>
+    <button class="exchange">Обмен валют
+        <img class="money" src="./assets/images/exchange.png" alt="Эмодзи">
+    </button>
+ </header>
+<button class="partys">Экскурсии и мероприятия
+    <img class="party" src="./assets/images/partys.png" alt="Эмодзи">
+</button>
+<button class="documentAuto">
+    <p class="textDocAuto">ВУ, банковские карты и др. документы резидента</p>
+    <img class="documentForAuto" src="./assets/images/documentAuto.jpg" alt="Эмодзи">
+    </button>
+<button class="saleHouse">
+    <p>Покупка строящегося и готового жилья в рассрочку</p>
+</button>
+    <div class="selectRoomForRent">
+        <div class="selectRoomForRentContainer">
+            <button class="selectRoomForRent-closeButton"></button>
+            <h2 class="chooseAFormatForRent">Выберите квартиру</h2>
+            <button class="studioForRent">Студии</button>
+            <button class="onebedroomForRent">1 бедрум</button>
+            <button class="twobedroomForRent">2 бедрум</button>
+            <button class="housesForRent">Дома</button>
+        </div>
+    </div>
+    <div class="selectStudioForRent">
+        <div class="selectStudioForRentContainer">
+            <button id="studioForRentCloseButton"></button>
+            <h2 class="selectStudioHeaderForRent">Выберите студию</h2>
+            <p class="studioListForRent">Список  студий : 
+                <br> <br> Laguna Beach 3 Maldives - <button class="l3S">Выбрать</button>
+                <br> <br> Venetian Condo - <button class="vcS">Выбрать</button>
+                <br> <br> View Talay 1 - <button class="vt1S">Выбрать</button>
+                <br> <br> Seven Seas - <button class="ssS">Выбрать</button>
+                <br> <br> Seven Seas Cote d Azur  - <button class="sscdaS">Выбрать</button>
+                <br> <br> New Nordic Pratumnak - <button class="nnpS">Выбрать</button>
+                <br> <br> Riviera Jomtien - <button class="rjS">Выбрать</button>
+                <br> <br> Riviera Wongamat - <button class="rwS">Выбрать</button>
+                <br> <br> Gallery Condo - <button class="gcS">Выбрать</button>
+            </p>
+        </div>
+    </div>
+    <div class="selectOneBedroomForRent">
+        <div class="selectOneBedroomForRentContainer">
+        <button class="selectOneBedroomForRent-closeButton"></button>
+        <h2 class="selectOneBedroomHeaderForRent">Выберите 1 бедрум</h2>
+        <p class="onebedroomListForRent">Список  1 бедрум: 
+            <br><br> Laguna Beach 3 Maldives - <button class="l3Bed">Выбрать</button>
+            <br> <br> Laguna Beach 2 - <button class="l2Bed">Выбрать</button>
+            <br> <br> Paradise Park - <button class="ppBed">Выбрать</button>
+            <br> <br> Amazon Condo - <button class="anbed">Выбрать</button>
+            <br> <br> Dusit Grand Park - <button class="dgpBed">Выбрать</button>
+            <br> <br> Copacabanna - <button class="cBed">Выбрать</button>
+            <br> <br> Dusit Grand View - <button class="dgvBed">Выбрать</button>
+            <br> <br> Empire Tower - <button class="etBed">Выбрать</button>
+            <br> <br> Laguna Beach 1 - <button class="l1Bed">Выбрать</button>
+            <br> <br> Lumpini Jomtien - <button class="ljBed">Выбрать</button>
+            <br> <br> Peak Tower - <button class="ptBed">Выбрать</button>
+            <br> <br> Riviera Monaco - <button class="rmBed">Выбрать</button>
+            <br> <br> Riviera Ocean Drive - <button class="rodBed">Выбрать</button>
+            <br> <br> Serenity Wongamat - <button class="swBed">Выбрать</button>
+            <br> <br> Seven Seas Condo - <button class="ssBed">Выбрать</button>
+            <br> <br> Seven Seas Cote d Azur - <button class="sscBed">Выбрать</button> 
+            <br> <br> Atlantis Condo - <button class="asBed">Выбрать</button>
+            <br> <br> Riviera Jomtien - <button class="rjBed">Выбрать</button>
+            <br> <br> Tropical Garden Pratumnak - <button class="tgpBed">Выбрать</button>
+            <br> <br> Siam Garden 2 - <button class="sg2Bed">Выбрать</button>
+            <br> <br> Wongamat Tower - <button class="wtBed">Выбрать</button>
+             <br> <br> Riviera Jomtien (1 bedroom) - <button class="rjBed3">Выбрать</button>
+            </div>
+        </p>
+    </div>
+    </div>
+    <div class="selectTwoBedroomForRent">
+        <div class="selectTwoBedroomForRentContainer">
+            <button class="selectTwoBedroomForRent-closeButton"></button>
+            <h2 class="selectTwoBedroomHeaderForRent">Выберите 2 бедрум</h2>
+            <p class="twoBedroomListForRent">Список  2 бедрум: 
+            <br> <br> Acqua Condo - <button class="acTwoBed">Выбрать</button>
+            <br> <br> Amazon Condo - <button class="anTwoBed">Выбрать</button>
+            <br> <br> CC Condo 1 - <button class="ccTwoBed">Выбрать</button>
+            <br> <br> Riviera Jomtien - <button class="rj4Bed"></button>
+            <br> <br> Seven Seas Cote d Azur - <button class="sscdaTwoBed"></button>
+            </p>
+        </div>
+    </div>
+    <div class="selectHouseForRent">
+        <div class="selectHouseForRentContainer">
+            <button class="selectHouseForRent-closeButton"></button>
+            <h2 class="selectHouseHeaderForRent">Выберите дом</h2>
+            <p class="houseListForRent">Список домов</p>
+        </div>
+    </div>
+    <div class="selectHotDeal">
+        <div class="selectHotDealContainer">
+            <button class="selectHotDeal-closeButton"></button>
+            <h2 class="selectHotDealHeader">Выберите предложение</h2>
+            <p class="hotDealList">Список горячих предложений:
+                <br> <br> Amazon Condo (1 bedroom) - <button class="anbed">Выбрать</button>
+                <br> <br> Lumpini Jomtien (1 bedroom) - <button class="ljBed">Выбрать</button>
+                <br> <br> Riviera Jomtien (1 bedroom) - <button class="rjBed2">Выбрать</button>
+            </p>
+        </div>
+    </div>
+    <div class="selectTypeOfVenicle">
+        <div class="selectTypeOfVenicleContainer">
+            <button class="selectTypeOfVenicle-closeButton"></button>
+            <h2 class="venicleHeader">Выберите формат транспорта или трансфер</h2>
+            <button class="cars">Машины</button>
+            <button class="bike">Скутеры</button>
+            <button class="transfer">Трансфер</button>
+        </div>
+    </div>
+    <div class="exchangeInfo">
+        <div class="exchangeInfoContainer">
+            <button class="exchangeInfo-closeButton"></button>
+            <h2 class="infoHeader">Информация об обмене</h2>
+            <p class="infoExchange">Предлагаем удобный обмен валют по выгодному курсу: <br> <br>Российский RUB на тайский THB   <br> (онлайн переводом на российскую карту - переводом на тайскую карту, переводом на российскую карту - доставка наличными в любую точку Паттайи бесплатно) <br> <br> Российский RUB на американский USD <br>  ( онлайн переводом на российскую карту - доставка наличными в любую точку Паттайи бесплатно)
+          </p>
+            <button class="knowCurs">Узнать курс</button>
+            <p class="textKnowCurs">2.68</p>
+        </div>
+    </div>
+    <div class="partyInfo">
+        <div class="partyInfoContainer">
+            <button class="partyInfo-closeButton"></button>
+            <h2 class="partyInfoHeader">Экскурсии и мероприятия</h2>
+            <iframe src="https://drive.google.com/file/d/1Xt4vu_rt2fzEmqUdS6qR_ePfFsQHRuXe/preview" width="500" height="400" allow="autoplay"></iframe>
+        </div>
+    </div>
+    <div class="documentInfo">
+        <div class="documentInfoContainer">
+            <button class="documentInfoCloseButton"></button>
+            <h2 class="documentInfoHeader">Перечень документов</h2>
+            <br> <br> Банковская дебетовая карта
+            <br> <br> ВУ категория А
+            <br> <br> ВУ категория Б
+            <br> <br> Resident Certificate
+            <br> <br> Все виды Виз
+        </div>
+    </div>
+    <div class="amazonCondo">
+        <div class="container">
+            <button class="closeAnBed"></button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+            <img  class="photo"  src="./assets/images/Amazon Condo 1  бедрум/photo_2024-04-10_21-31-27.jpg" alt="Amazon">
+            <img class="photo"   src="./assets/images/Amazon Condo 1  бедрум/photo_2024-04-10_21-31-28.jpg" alt="Amazon">
+            <img class="photo"   src="./assets/images/Amazon Condo 1  бедрум/photo_2024-04-10_21-31-34.jpg" alt="Amazon">
+            <img  class="photo" src="./assets/images/Amazon Condo 1  бедрум/photo_2024-04-10_21-31-36.jpg" alt="Amazon">
+            <img  class="photo"  src="./assets/images/Amazon Condo 1  бедрум/photo_2024-04-10_21-31-41.jpg" alt="Amazon">
+            <img  class="photo"  src="./assets/images/Amazon Condo 1  бедрум/photo_2024-04-10_21-31-47.jpg" alt="Amazon">
+            <img class="photo"  src="./assets/images/Amazon Condo 1  бедрум/photo_2024-04-10_21-31-48.jpg" alt="Amazon">
+            <img class="photo"   src="./assets/images/Amazon Condo 1  бедрум/photo_2024-04-10_21-31-51.jpg" alt="Amazon">       
+        </div>
+    </div>
+    <div class="lumpiniJomtien">
+        <div class="container">
+            <button class="closeLjBed"></button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+            <img class="photo"  src="./assets/images/Lumpini Jomtien 1 бедрум 12А этаж/photo_2024-04-10_21-30-24.jpg" alt="Lumpini">
+            <img  class="photo"   src="./assets/images/Lumpini Jomtien 1 бедрум 12А этаж/photo_2024-04-10_21-30-29.jpg" alt="Lumpini">
+            <img  class="photo"  src="./assets/images/Lumpini Jomtien 1 бедрум 12А этаж/photo_2024-04-10_21-30-33.jpg" alt="Lumpini">
+            <img class="photo"  src="./assets/images/Lumpini Jomtien 1 бедрум 12А этаж/photo_2024-04-10_21-30-35.jpg" alt="Lumpini">
+            <img  class="photo"  src="./assets/images/Lumpini Jomtien 1 бедрум 12А этаж/photo_2024-04-10_21-30-41.jpg" alt="Lumpini">
+            <img  class="photo"  src="./assets/images/Lumpini Jomtien 1 бедрум 12А этаж/photo_2024-04-10_21-30-42.jpg" alt="Lumpini">
+        </div>
+    </div>
+    <div class="rivieraTwelveFloor">
+        <div class="container">
+            <button class="closeRjEBed"></button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+        <img class="photo"  src="./assets/images/Riviera Jomtien 1 бедрум 12 этаж/photo_2024-04-10_21-29-16.jpg" alt="Riviera">
+        <img class="photo" src="./assets/images/Riviera Jomtien 1 бедрум 12 этаж/photo_2024-04-10_21-29-17.jpg" alt="Riviera">
+        <img class="photo" src="./assets/images/Riviera Jomtien 1 бедрум 12 этаж/photo_2024-04-10_21-29-20.jpg" alt="Riviera">
+        <img  class="photo" src="./assets/images/Riviera Jomtien 1 бедрум 12 этаж/photo_2024-04-10_21-29-23.jpg" alt="Riviera">
+        <img class="photo" src="./assets/images/Riviera Jomtien 1 бедрум 12 этаж/photo_2024-04-10_21-29-26.jpg" alt="Riviera">
+        <img class="photo" src="./assets/images/Riviera Jomtien 1 бедрум 12 этаж/photo_2024-04-10_21-29-30.jpg" alt="Riviera">
+        </div>
+    </div>
+    <div class="rivieraTwentyFloor">
+        <div class="container">
+            <button class="closeRjYBed"></button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+            <img class="photo" src="./assets/images/Riviera Jomtien 1 бедрум 20 этаж/photo_2024-04-10_21-05-58.jpg" alt="Riviera">
+            <img class="photo" src="./assets/images/Riviera Jomtien 1 бедрум 20 этаж/photo_2024-04-10_21-06-00.jpg" alt="Riviera">
+            <img class="photo" src="./assets/images/Riviera Jomtien 1 бедрум 20 этаж/photo_2024-04-10_21-06-01.jpg" alt="Riviera">
+            <img class="photo" src="./assets/images/Riviera Jomtien 1 бедрум 20 этаж/photo_2024-04-10_21-06-03.jpg" alt="Riviera">
+            <img class="photo" src="./assets/images/Riviera Jomtien 1 бедрум 20 этаж/photo_2024-04-10_21-06-05.jpg" alt="Riviera">
+            <img class="photo" src="./assets/images/Riviera Jomtien 1 бедрум 20 этаж/photo_2024-04-10_21-06-07.jpg" alt="Riviera">
+            <img class="photo" src="./assets/images/Riviera Jomtien 1 бедрум 20 этаж/photo_2024-04-10_21-06-09.jpg" alt="Riviera">
+            <img class="photo" src="./assets/images/Riviera Jomtien 1 бедрум 20 этаж/photo_2024-04-10_21-06-13.jpg" alt="Riviera">
+        </div>
+    </div>
+    <div class="rivieraTwoBedroom">
+        <div class="container">
+            <button class="closeRj2Bed"></button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+            <img class="photo" src="./assets/images/Riviera Jomtien 2 бедрум/photo_2024-04-10_21-32-26.jpg"  alt="Riviera">
+            <img class="photo" src="./assets/images/Riviera Jomtien 2 бедрум/photo_2024-04-10_21-32-29.jpg" alt="Riviera">
+            <img class="photo" src="./assets/images/Riviera Jomtien 2 бедрум/photo_2024-04-10_21-32-32.jpg" alt="Riviera">
+            <img class="photo" src="./assets/images/Riviera Jomtien 2 бедрум/photo_2024-04-10_21-32-36.jpg" alt="Riviera">
+            <img class="photo" src="./assets/images/Riviera Jomtien 2 бедрум/photo_2024-04-10_21-32-40.jpg" alt="Riviera">
+            <img class="photo" src="./assets/images/Riviera Jomtien 2 бедрум/photo_2024-04-10_21-32-45.jpg" alt="Riviera">
+        </div>
+    </div> 
+    <div class="ccCondo">
+        <div class="container">
+            <button class="closeCc"></button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+            <img class="photo" src="./assets/images/CC Condo 1 2 бедрум/photo_2024-05-02_11-14-25.jpg" alt="CC">
+            <img class="photo" src="./assets/images/CC Condo 1 2 бедрум/photo_2024-05-02_11-14-26.jpg" alt="CC">
+            <img class="photo" src="./assets/images/CC Condo 1 2 бедрум/photo_2024-05-02_11-14-30.jpg" alt="CC">
+            <img class="photo" src="./assets/images/CC Condo 1 2 бедрум/photo_2024-05-02_11-14-33.jpg" alt="CC">
+            <img class="photo" src="./assets/images/CC Condo 1 2 бедрум/photo_2024-05-02_11-14-36.jpg" alt="CC">
+            <img class="photo" src="./assets/images/CC Condo 1 2 бедрум/photo_2024-05-02_11-14-45.jpg" alt="CC">
+        </div>
+    </div>
+    <div class="l3Studio">
+        <div class="container">
+            <button class="closeL3S"></button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+                <img class="photo" src="./assets/images/L3 студия/photo_2024-05-02_11-15-24.jpg" alt="L3">
+                <img class="photo" src="./assets/images/L3 студия/photo_2024-05-02_11-15-25.jpg" alt="L3">
+                <img class="photo" src="./assets/images/L3 студия/photo_2024-05-02_11-15-29.jpg" alt="l3">
+                <img class="photo" src="./assets/images/L3 студия/photo_2024-05-02_11-15-30.jpg" alt="L3">
+                <img class="photo" src="./assets/images/L3 студия/photo_2024-05-02_11-15-32.jpg" alt="L3">
+        </div>
+    </div>
+    <div class="venetianStudio">
+        <div class="container">
+            <button class="closeVenetianS"></button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+            <img class="photo" src="./assets/images/Venetian Condo студия/photo_2024-05-02_12-29-40.jpg" alt="Venetian">
+            <img class="photo" src="./assets/images/Venetian Condo студия/photo_2024-05-02_12-29-41.jpg" alt="Venetian">
+            <img class="photo" src="./assets/images/Venetian Condo студия/photo_2024-05-02_12-29-43.jpg" alt="Venetian">
+            <img class="photo" src="./assets/images/Venetian Condo студия/photo_2024-05-02_12-29-44.jpg" alt="Venetian">
+        </div>
+    </div>
+    <div class="viewTalay1Studio">
+        <div class="container">
+            <button class="closeViewTalayS"></button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+            <img class="photo" src="./assets/images/View Talay 1 студия/photo_2024-05-02_12-28-32.jpg" alt="view">
+            <img class="photo" src="./assets/images/View Talay 1 студия/photo_2024-05-02_12-28-36.jpg" alt="view">
+            <img class="photo" src="./assets/images/View Talay 1 студия/photo_2024-05-02_12-28-38.jpg" alt="view">
+            <img class="photo" src="./assets/images/View Talay 1 студия/photo_2024-05-02_12-28-41.jpg" alt="view">
+            <img class="photo" src="./assets/images/View Talay 1 студия/photo_2024-05-02_12-28-43.jpg" alt="view">
+            <img class="photo" src="./assets/images/View Talay 1 студия/photo_2024-05-02_12-28-43.jpg" alt="view">
+            <img class="photo" src="./assets/images/View Talay 1 студия/photo_2024-05-02_12-28-49.jpg" alt="view">
+        </div>
+    </div>
+    <div class="sevenSeasStudio">
+        <div class="container">
+            <button class="closeSsS"> </button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+            <img class="photo" src="./assets/images/Seven Seas Condo cтудия/photo_2024-05-02_11-29-20.jpg" alt="ss">
+            <img class="photo" src="./assets/images/Seven Seas Condo cтудия/photo_2024-05-02_11-29-22.jpg" alt="ss">
+            <img class="photo" src="./assets/images/Seven Seas Condo cтудия/photo_2024-05-02_11-29-25.jpg" alt="ss">
+            <img class="photo" src="./assets/images/Seven Seas Condo cтудия/photo_2024-05-02_11-29-28.jpg" alt="ss">
+            <img class="photo" src="./assets/images/Seven Seas Condo cтудия/photo_2024-05-02_11-29-33.jpg" alt="ss">
+        </div>
+    </div>
+    <div class="ssCoteAzurStudio">
+        <div class="container">
+            <button class="closeSscdaS"></button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+            <img class="photo" src="./assets/images/Seven Seas Cote d asur студия/photo_2024-05-02_11-12-04.jpg" alt="sscda">
+            <img class="photo" src="./assets/images/Seven Seas Cote d asur студия/photo_2024-05-02_11-12-05.jpg" alt="sscda">
+            <img class="photo" src="./assets/images/Seven Seas Cote d asur студия/photo_2024-05-02_11-12-07.jpg" alt="sscda">
+            <img class="photo" src="./assets/images/Seven Seas Cote d asur студия/photo_2024-05-02_11-12-13.jpg" alt="sscda">
+            <img class="photo" src="./assets/images/Seven Seas Cote d asur студия/photo_2024-05-02_11-12-14.jpg" alt="sscda">
+            <img class="photo" src="./assets/images/Seven Seas Cote d asur студия/photo_2024-05-02_11-12-20.jpg" alt="sscda">
+        </div>
+        </div>
+     <div class="gellaryStudio">
+        <div class="container">
+            <button class="closeGellary"></button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+            <img class="photo" src="./assets/images/Gellary Condo студия/IMG-20230715-WA0067.jpg">
+            <img class="photo" src="./assets/images/Gellary Condo студия/IMG-20230715-WA0068.jpg">
+            <img class="photo" src="./assets/images/Gellary Condo студия/IMG-20230718-WA0087.jpg">
+            <img class="photo" src="./assets/images/Gellary Condo студия/IMG-20230718-WA0095.jpg">
+            <img class="photo" src="./assets/images/Gellary Condo студия/IMG-20230723-WA0013.jpg">
+            <img class="photo" src="./assets/images/Gellary Condo студия/IMG-20230715-WA0071.jpg">
+        </div>
      </div>
-     <button class="edit">
-      <img class="write" src="./assets/images/zapis.png" alt="add" />
-     </button>
-     <button class="remove">
-      <img
-       class="trash"
-       src="./assets/images/1696523403_gas-kvas-com-p-kartinki-bak-5.png"
-       alt="remove" />
-     </button>
+     <div class="atlantisBed">
+        <div class="container">
+            <button class="closeAsBed">
+                <h2 class="roomHeader">Информация о квартире</h2>
+            </button>
+        </div>
     </div>
-   </div>
- 
-   <div class="card">
-    <div class="сontainer">
-     <div class="wrapper">
-     <div class="words">Accept</div>
-     <p class="trancription">[]</p>
-     <p class="translate">Принимать</p>
- </div>
-     <button class="edit">
-      <img class="write" src="./assets/images/zapis.png" alt="add" />
-     </button>
-     <button class="remove">
-      <img
-       class="trash"
-       src="./assets/images/1696523403_gas-kvas-com-p-kartinki-bak-5.png"
-       alt="remove" />
-     </button>
+    <div class="copaBed">
+        <div class="container">
+            <button class="closeCopaBed"> </button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+            <img class="photo" src="./assets/images/Copacabbana 1 бедрум/photo_2024-05-02_12-27-08.jpg">
+            <img class="photo" src="./assets/images/Copacabbana 1 бедрум/photo_2024-05-02_12-27-10.jpg">
+            <img class="photo" src="./assets/images/Copacabbana 1 бедрум/photo_2024-05-02_12-27-11.jpg">
+            <img class="photo" src="./assets/images/Copacabbana 1 бедрум/photo_2024-05-02_12-27-15.jpg">
+            <img class="photo" src="./assets/images/Copacabbana 1 бедрум/photo_2024-05-02_12-27-17.jpg">
+        </div>
     </div>
-   </div>
- 
-   <div class="card">
-    <div class="container">
-     <div class="wrapper">
-     <p class="words">Betray</p>
-     <p class="trancription">[]</p>
-     <p class="translate">Предавать</p>
-     </div>
-     <button class="edit">
-      <img class="write" src="./assets/images/zapis.png" alt="add" />
-     </button>
-     <button class="remove">
-      <img
-       class="trash"
-       src="./assets/images/1696523403_gas-kvas-com-p-kartinki-bak-5.png"
-       alt="remove" />
-     </button>
+    <div class="dusitGrandViewBed">
+        <div class="container">
+            <button class="closeDgvBed"> </button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+            <img class="photo" src="./assets/images/Dusit Grand View 1 бедрум/photo_2024-05-02_11-45-33.jpg">
+            <img class="photo" src="./assets/images/Dusit Grand View 1 бедрум/photo_2024-05-02_11-45-34.jpg">
+            <img class="photo" src="./assets/images/Dusit Grand View 1 бедрум/photo_2024-05-02_11-45-36.jpg">
+            <img class="photo" src="./assets/images/Dusit Grand View 1 бедрум/photo_2024-05-02_11-45-37.jpg">
+            <img class="photo" src="./assets/images/Copacabbana 1 бедрум/photo_2024-05-02_12-27-17.jpg">
+        </div>
     </div>
-   </div>
- 
-   <div class="card">
-    <div class="container">
-     <div class="wrapper">
-     <p class="words">Сause</p>
-     <p class="trancription">[]</p>
-     <p class="translate">Вызывать</p>
- </div>
-     <button class="edit">
-      <img class="write" src="./assets/images/zapis.png" alt="add" />
-     </button>
-     <button class="remove">
-      <img
-       class="trash"
-       src="./assets/images/1696523403_gas-kvas-com-p-kartinki-bak-5.png"
-       alt="remove" />
-     </button>
+    <div class="empireTowerBed">
+        <div class="container">
+            <button class="closeEtBed"></button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+            <img class="photo" src="./assets/images/Empire Tower 1 бедрум/photo_2024-05-02_11-06-33.jpg">
+            <img class="photo" src="./assets/images/Empire Tower 1 бедрум/photo_2024-05-02_11-06-35.jpg">
+            <img class="photo" src="./assets/images/Empire Tower 1 бедрум/photo_2024-05-02_11-06-36.jpg">
+            <img class="photo" src="./assets/images/Empire Tower 1 бедрум/photo_2024-05-02_11-06-38.jpg">
+        </div>
     </div>
-   </div>
- 
-   <script src="./assets/scripts/script.js"></script>
-  </body>
- </html>
+    <div class="laguna3Bed">
+        <div class="container">
+            <button class="closeL3Bed"></button>
+            <h2 class="roomHeader">Информация О квартире</h2>
+            <img class="photo" src="./assets/images/L3 1 бедрум/photo_2024-05-02_11-28-28.jpg">
+            <img class="photo" src="./assets/images/L3 1 бедрум/photo_2024-05-02_11-28-30.jpg">
+            <img class="photo" src="./assets/images/L3 1 бедрум/photo_2024-05-02_11-28-32.jpg">
+            <img class="photo" src="./assets/images/L3 1 бедрум/photo_2024-05-02_11-28-35.jpg">
+            <img class="photo" src="./assets/images/L3 1 бедрум/photo_2024-05-02_11-28-36.jpg">
+            <img class="photo" src="./assets/images/L3 1 бедрум/photo_2024-05-02_11-28-38.jpg">
+            <img class="photo" src="./assets/images/L3 1 бедрум/photo_2024-05-02_11-28-41.jpg">
+        </div>
+    </div>
+    <div class="laguna1Bed">
+        <div class="container">
+            <button class="closeL1Bed"></button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+            <img class="photo" src="./assets/images/Laguna Beach 1 1 бедрум/IMG-20230729-WA0142.jpg">
+            <img class="photo" src="./assets/images/Laguna Beach 1 1 бедрум/IMG-20230729-WA0143.jpg">
+            <img class="photo" src="./assets/images/Laguna Beach 1 1 бедрум/IMG-20230729-WA0144.jpg">
+            <img class="photo" src="./assets/images/Laguna Beach 1 1 бедрум/IMG-20230729-WA0146.jpg">
+            <img class="photo" src="./assets/images/Laguna Beach 1 1 бедрум/IMG-20230729-WA0147.jpg">
+            <img class="photo" src="./assets/images/Laguna Beach 1 1 бедрум/IMG-20231223-WA0062.jpg">
+        </div>
+    </div>
+    <div class="laguna2Bed">
+        <div class="container">
+            <button class="closeL2Bed"></button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+            <img class="photo" src="./assets/images/Laguna Beach 2 1 бедрум/IMG-20230729-WA0139.jpg">
+            <img class="photo" src="./assets/images/Laguna Beach 2 1 бедрум/IMG-20231223-WA0060.jpg">
+            <img class="photo" src="./assets/images/Laguna Beach 2 1 бедрум/IMG-20231223-WA0061.jpg">
+        </div>
+    </div>
+    <div class="paradiseBed">
+        <div class="container">
+            <button class="closePpBed"> </button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+            <img class="photo" src="./assets/images/Paradise Park 1 бедрум/photo_2024-05-02_11-23-09.jpg">
+            <img class="photo" src="./assets/images/Paradise Park 1 бедрум/photo_2024-05-02_11-23-11.jpg">
+            <img class="photo" src="./assets/images/Paradise Park 1 бедрум/photo_2024-05-02_11-23-13.jpg">
+            <img class="photo" src="./assets/images/Paradise Park 1 бедрум/photo_2024-05-02_11-23-15.jpg">
+        </div>
+    </div>
+    <div class="peakTowerBed">
+        <div class="container">
+            <button class="closePtBed"></button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+            <img class="photo" src="./assets/images/Peak Tower 1 бедрум/photo_2024-05-02_12-32-28.jpg">
+            <img class="photo" src="./assets/images/Peak Tower 1 бедрум/photo_2024-05-02_12-32-29.jpg">
+            <img class="photo" src="./assets/images/Peak Tower 1 бедрум/photo_2024-05-02_12-32-29 (2).jpg">
+        </div>
+    </div>
+    <div class="rivieraMonacoBed">
+        <div class="container">
+            <button class="closeRmBed"></button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+            <img class="photo" src="./assets/images/Riviera Monaco 1 бедрум/IMG-20231201-WA0142(1).jpg">
+            <img class="photo" src="./assets/images/Riviera Monaco 1 бедрум/IMG-20231201-WA0143(4).jpg">
+            <img class="photo" src="./assets/images/Riviera Monaco 1 бедрум/IMG-20231201-WA0150(1).jpg">
+            <img class="photo" src="./assets/images/Riviera Monaco 1 бедрум/IMG-20231201-WA0151(3).jpg">
+        </div>
+    </div>
+    <div class="rivieraOceanDriveBed">
+        <div class="container">
+            <button class="closeRodBed"></button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+            <img class="photo" src="./assets/images/Riviera Ocean Drive 1 бедрум/photo_2024-05-02_11-19-53.jpg">
+            <img class="photo" src="./assets/images/Riviera Ocean Drive 1 бедрум/photo_2024-05-02_11-19-58.jpg">
+            <img class="photo" src="./assets/images/Riviera Ocean Drive 1 бедрум/photo_2024-05-02_11-20-08.jpg">
+            <img class="photo" src="./assets/images/Riviera Ocean Drive 1 бедрум/photo_2024-05-02_11-20-11.jpg">
+            <img class="photo" src="./assets/images/Riviera Ocean Drive 1 бедрум/photo_2024-05-02_11-20-23.jpg">
+            <img class="photo" src="./assets/images/Riviera Ocean Drive 1 бедрум/photo_2024-05-02_11-20-27.jpg">
+        </div>
+    </div>
+    <div class="serenityBed">
+        <div class="container">
+            <button class="closeSwBed"></button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+            <img class="photo" src="./assets/images/Serenity Wogamat 1 бедрум/photo_2024-05-02_12-31-37.jpg">
+            <img class="photo" src="./assets/images/Serenity Wogamat 1 бедрум/photo_2024-05-02_12-31-38.jpg">
+            <img class="photo" src="./assets/images/Serenity Wogamat 1 бедрум/photo_2024-05-02_12-31-39.jpg">
+            <img class="photo" src="./assets/images/Serenity Wogamat 1 бедрум/photo_2024-05-02_12-31-42.jpg">
+            <img class="photo" src="./assets/images/Serenity Wogamat 1 бедрум/photo_2024-05-02_12-31-43.jpg">
+            <img class="photo" src="./assets/images/Serenity Wogamat 1 бедрум/photo_2024-05-02_12-31-46.jpg">
+            <img class="photo" src="./assets/images/Serenity Wogamat 1 бедрум/photo_2024-05-02_12-31-48.jpg">
+            <img class="photo" src="./assets/images/Serenity Wogamat 1 бедрум/photo_2024-05-02_12-31-51.jpg">
+        </div>
+    </div>
+    <div class="sevenSeasBed">
+        <div class="container">
+            <button class="closeSsBed"></button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+            <img class="photo" src="./assets/images/Seven Seas Condo 1 бедрум/photo_2024-05-02_11-31-13.jpg">
+            <img class="photo" src="./assets/images/Seven Seas Condo 1 бедрум/photo_2024-05-02_11-31-15.jpg">
+            <img class="photo" src="./assets/images/Seven Seas Condo 1 бедрум/photo_2024-05-02_11-31-17.jpg">
+            <img class="photo" src="./assets/images/Seven Seas Condo 1 бедрум/photo_2024-05-02_11-31-20.jpg">
+            <img class="photo" src="./assets/images/Seven Seas Condo 1 бедрум/photo_2024-05-02_11-31-23.jpg">
+            <img class="photo" src="./assets/images/Seven Seas Condo 1 бедрум/photo_2024-05-02_11-31-25.jpg">
+        </div>
+    </div>
+    <div class="sevenSeasCoteDAzurBed">
+        <div class="container">
+            <button class="closeSscdaBed"></button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+            <img class="photo" src="./assets/images/Seven Seas Cote d Asur 1 бедрум/IMG_20231205_212023_465.jpg">
+            <img class="photo" src="./assets/images/Seven Seas Cote d Asur 1 бедрум/IMG_20231205_212023_484.jpg">
+            <img class="photo" src="./assets/images/Seven Seas Cote d Asur 1 бедрум/IMG_20231205_212023_675.jpg">
+            <img class="photo" src="./assets/images/Seven Seas Cote d Asur 1 бедрум/IMG_20231205_212023_681.jpg">
+            <img class="photo" src="./assets/images/Seven Seas Cote d Asur 1 бедрум/IMG_20231205_212023_952.jpg">
+            <img class="photo" src="./assets/images/Seven Seas Cote d Asur 1 бедрум/IMG_20231205_212024_015.jpg">
+        </div>
+    </div>
+    <div class="tropicalGardenBed">
+        <div class="container">
+            <button class="closeTgBed"></button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+            <img class="photo" src="./assets/images/Tropical Garden 1 бедрум (бабушкин стайл)/photo_2024-05-02_11-21-10.jpg">
+            <img class="photo" src="./assets/images/Tropical Garden 1 бедрум (бабушкин стайл)/photo_2024-05-02_11-21-12.jpg">
+            <img class="photo" src="./assets/images/Tropical Garden 1 бедрум (бабушкин стайл)/photo_2024-05-02_11-21-15.jpg">
+            <img class="photo" src="./assets/images/Tropical Garden 1 бедрум (бабушкин стайл)/photo_2024-05-02_11-21-17.jpg">
+            <img class="photo" src="./assets/images/Tropical Garden 1 бедрум (бабушкин стайл)/photo_2024-05-02_11-21-21.jpg">
+            <img class="photo" src="./assets/images/Tropical Garden 1 бедрум (бабушкин стайл)/photo_2024-05-02_11-21-25.jpg">
+            <img class="photo" src="./assets/images/Tropical Garden 1 бедрум (бабушкин стайл)/photo_2024-05-02_11-21-29.jpg"> 
+        </div>
+    </div>
+
+    <div class="aquaTwoBed">
+        <div class="container">
+            <button class="closeAquaTwoBed"></button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+            <img  class="photo" src="./assets/images/Aqua Condo 2 бедрум/photo_2024-05-02_11-26-49.jpg">
+            <img class="photo" src="./assets/images/Aqua Condo 2 бедрум/photo_2024-05-02_11-26-53.jpg">
+            <img class="photo" src="./assets/images/Aqua Condo 2 бедрум/photo_2024-05-02_11-26-55.jpg">
+            <img class="photo" src="./assets/images/Aqua Condo 2 бедрум/photo_2024-05-02_11-26-57.jpg">
+            <img class="photo" src="./assets/images/Aqua Condo 2 бедрум/photo_2024-05-02_11-26-59.jpg">
+            <img class="photo" src="./assets/images/Aqua Condo 2 бедрум/photo_2024-05-02_11-27-01.jpg">
+            <img class="photo" src="./assets/images/Aqua Condo 2 бедрум/photo_2024-05-02_11-27-03.jpg">
+            <img class="photo" src="./assets/images/Aqua Condo 2 бедрум/photo_2024-05-02_11-27-05.jpg">
+        </div>
+    </div>
+
+    <div class="sevenSeasCdaTwoBed">
+        <div class="container">
+            <button class="closeSscdaTwoBed"></button>
+            <h2 class="roomHeader">Информация о квартире</h2>
+            <img class="photo" src="./assets/images/Seven Seas Cote d Azur 2 бедрум/photo_2024-05-02_12-30-38.jpg">
+            <img class="photo" src="./assets/images/Seven Seas Cote d Azur 2 бедрум/photo_2024-05-02_12-30-40.jpg">
+            <img class="photo" src="./assets/images/Seven Seas Cote d Azur 2 бедрум/photo_2024-05-02_12-30-43.jpg">
+            <img class="photo" src="./assets/images/Seven Seas Cote d Azur 2 бедрум/photo_2024-05-02_12-30-45.jpg">
+            <img class="photo" src="./assets/images/Seven Seas Cote d Azur 2 бедрум/photo_2024-05-02_12-30-46.jpg">
+            <img class="photo" src="./assets/images/Seven Seas Cote d Azur 2 бедрум/photo_2024-05-02_12-30-49.jpg">
+            <img class="photo" src="./assets/images/Seven Seas Cote d Azur 2 бедрум/photo_2024-05-02_12-30-51.jpg">
+            <img class="photo" src="./assets/images/Seven Seas Cote d Azur 2 бедрум/photo_2024-05-02_12-30-54.jpg">
+        </div>
+    </div>
+
+
+    <div class="carList">
+        <div class="carListContainer">
+            <button class="carListClose"></button>
+            <h2 class="listCar">Список авто:</h2>
+            <p class="listOfCar">Toyota Vios - 12000<button>Выбрать</button>
+            <br> <br>  Honda Accord - 18000 <button>Выбрать</button>
+            </p>
+        </div>
+    </div>
+    <div class="motorbikeList">
+        <div class="motorbikeListContainer">
+            <button class="motorbikeListClose"></button>
+            <h2 class="listMotorbike">Список моторбайков:</h2>
+            <p class="listOfMotorbike">Honda Click 125i - <button>Выбрать</button>
+             <br> <br> Honda Click 125 - <button>Выбрать</button>
+            </p>
+        </div>
+    </div>
+    <div class="transferList">
+        <div class="transferListContainer">
+            <button class="transferListClose"></button>
+            <h2 class="listTransfer">Выбор трансфера:</h2>
+            <p class="listOfTransfer"></p>
+        </div>
+    </div>
+<script src="./assets/scripts/scriptForObjects.js" type="module"></script>
+<script src="./assets/scripts/script.js" type="module"></script>
+</body>
+</html>
